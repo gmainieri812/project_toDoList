@@ -1,8 +1,4 @@
-TO DO LIST = SEMESTER PROJECT
-
-GEORGIOS B. MAINIERI
-CS 81
-ANTHONY WANG
+TO DO LIST 
 
 To Do List was a tool that I used a lot during the semester so I could organize myself with the subjects. First, 
 I made my To Do List with Post-it, where I separated the disciplines by color, wrote down the tasks and as I was performing I crossed out the task performed. 
