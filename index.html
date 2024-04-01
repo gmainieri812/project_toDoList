@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Semester Project
+    Georgios B. Mainieri
+    CS 81
+    Anthony Wang-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="css/styles.css">
+    <!--CDN Font-Awesome-->
+    <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" />
+    <!--JS-->
+    <script src="js/scripts.js" defer></script>
+</head>
+<body>
+    <div class="todo-container">
+        <header>
+            <h1>To Do List</h1>
+        </header>
+        <form id="todo-form">
+            <p>Add your task:</p>
+            <div class="form-control">
+                <input type="text" 
+                        id="todo-input" 
+                        placeholder="What do you need to do?" autofocus>
+                <button type="submit" 
+                        title="Add Task">
+                    <i class="fa-thin fa-plus"></i>
+                </button>
+            </div>
+        </form>
+        <form id="edit-form" class="hide">
+            <p>Edit your task:</p>
+            <div class="form-control">
+                <input type="text" 
+                        id="edit-input">
+                <button type="submit"
+                        title="Edit Task">
+                    <i class="fa-solid fa-check-double"></i>
+                </button>
+            </div>
+            <button id="cancel-edit-btn"
+                    title="Cancel Editing">Cancel</button>
+        </form>
+        <div id="toolbar">
+            <div id="search">
+                <h4>Search:</h4>
+                <form>
+                    <input type="text" 
+                            id="search-input" 
+                            placeholder="Search">
+                    <button id="erase-button"
+                            title="Clear">
+                        <i class="fa-solid fa-delete-left"></i>
+                    </button>
+                </form>
+            </div>
+            <div id="filter">
+                <h4>Filter:</h4>
+                <select id="filter-select">
+                    <option value="all">All</option>
+                    <option value="done">Done</option>
+                    <option value="todo">To Do</option>    
+                </select>
+            </div>
+        </div>
+        <div id="todo-list">
+            <div class="todo done">
+                <h3>Fill in the To Do List</h3>
+                <button class="finish-todo"
+                        title="Done task">
+                    <i class="fa-solid fa-check"></i>
+                </button>
+                <button class="edit-todo"
+                        title="Edit task">
+                    <i class="fa-solid fa-pen"></i>
+                </button>
+                <button class="remove-todo"
+                        title="Remove task">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="todo">
+                <h3>I need to study JavaScript</h3>
+                <button class="finish-todo"
+                        title="Done task">
+                    <i class="fa-solid fa-check"></i>
+                </button>
+                <button class="edit-todo" 
+                        title="Edit task">
+                    <i class="fa-solid fa-pen"></i>
+                </button>
+                <button class="remove-todo"
+                        title="Remove task">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
